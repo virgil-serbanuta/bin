@@ -17,7 +17,8 @@ def defaultConfiguration():
     r'          ?Quorum1:Usize,\n'
     r'          ?ActionLastIndex1:Usize,\n'
     r'          ?ActionData1:Map,\n'
-    r'          ?ActionSigners1:Map):StateCell\n'
+    r'          ?ActionSigners1:Map,\n'
+    r'          ?PerformedActions:List):StateCell\n'
     r'    </TT></T>\n'
   )
 
@@ -94,7 +95,6 @@ def main(argv):
   if len(argv) < 1:
     print("Expected input file name")
   writeFile(argv[0] + ".k", transform(readFile(argv[0])))
-  pass
 
 if __name__ == "__main__":
   main(sys.argv[1:])
