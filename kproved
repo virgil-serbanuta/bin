@@ -1,0 +1,10 @@
+#!/bin/bash
+
+kprove $@ \
+  --haskell-backend-command "kore-repl --version --smt-timeout 2000 --repl-script /home/virgil/runtime-verification/k/haskell-backend/src/main/native/haskell-backend/kore/data/kast.kscript --solver-transcript /mnt/data/runtime-verification/log/`basename $1`.z3" \
+  2>&1 | tee /mnt/data/runtime-verification/log/$1.log
+
+
+# kprove $@ \
+#   --debugger \
+#   --debug-script /home/virgil/runtime-verification/k/haskell-backend/src/main/native/haskell-backend/kore/data/kast.kscript

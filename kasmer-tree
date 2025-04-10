@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# $1 is the iteration
+
+time poetry run python3 -m src.kmxwasm.property \
+    --claim $CLAIM \
+    --kcfg=../.property/kcfg.$BACKEND.$CONTRACT.$STEP.json \
+    --tree \
+    2>&1 | cat > logs/property.$BACKEND.$CONTRACT.$STEP.$1.tree.log

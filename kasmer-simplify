@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# $1 is the iteration
+# $2 is the node number
+
+time poetry run python3 -m src.kmxwasm.property \
+    --claim $CLAIM \
+    --kcfg=../.property/kcfg.$BACKEND.$CONTRACT.$STEP.json \
+    --simplify-before $2 \
+    2>&1 | cat > logs/property.$BACKEND.$CONTRACT.$STEP.$1.simplify.log

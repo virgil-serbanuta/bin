@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -ex
+
+branch=`git rev-parse --abbrev-ref HEAD`
+
+echo ">$branch<"
+
+git push origin -f
+
+pushd ~/runtime-verification/rv-match/c-semantics
+
+git fetch origin
+
+git checkout $branch
+
+git reset --hard origin/$branch
+
+popd

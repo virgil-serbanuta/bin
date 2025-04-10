@@ -1,0 +1,3 @@
+#!/bin/bash
+
+stack test --work-dir .stack-work-test "$@"

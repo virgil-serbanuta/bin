@@ -1,0 +1,4 @@
+#!/bin/bash
+
+stack clean --work-dir .stack-work-build "$@"
+stack clean --work-dir .stack-work-test "$@"

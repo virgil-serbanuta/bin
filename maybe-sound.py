@@ -14,7 +14,8 @@ LONG_COMMAND_SUBSTRINGS = [
     'kevm prove',
     'bazel',
     'run.sh',
-    'kmxwasm.property'
+    'kmxwasm.property',
+    'kasmer',
 ]
 
 def normalize(command):

@@ -1,0 +1,9 @@
+Search to the left of the arrow:
+\brule\b([^r]|r[^u]|ru[^l]|rul[^e]|\n)*stuff-to-search[^r]|r[^u]|ru[^l]|rul[^e]|\n)*=>([^r]|r[^u]|ru[^l]|rul[^e]|\n)*$
+
+Search to the left of the arrow:
+\brule\b([^r]|r[^u]|ru[^l]|rul[^e]|\n)*=>([^r]|r[^u]|ru[^l]|rul[^e]|\n)*stuff-to-search[^r]|r[^u]|ru[^l]|rul[^e]|\n)*$
+
+
+Search on both sides of the arrow:
+\brule\b([^r]|r[^u]|ru[^l]|rul[^e]|\n)*stuff-to-search[^r]|r[^u]|ru[^l]|rul[^e]|\n)*=>([^r]|r[^u]|ru[^l]|rul[^e]|\n)*stuff-to-search[^r]|r[^u]|ru[^l]|rul[^e]|\n)*$

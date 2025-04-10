@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -x
+
+time my-pyk kbuild kompile lemma-tests --debug && \
+K_OPTS=-Xmx8192m time my-pyk kbuild kompile lemma-tests-booster --debug && \
+time my-pyk pyk prove \
+    --definition $(my-pyk kbuild which lemma-tests) \
+    --llvm-definition $(my-pyk kbuild which lemma-tests-booster) \
+    $1

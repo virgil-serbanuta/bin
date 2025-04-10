@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -x
+
+poetry -C /mnt/data/runtime-verification/pyk run "$@"
