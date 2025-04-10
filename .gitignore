@@ -2,4 +2,8 @@ tmp*
 .sessionCommands
 buildifier-linux-amd64
 github-token*
+jetbrains-toolbox
 *.log
+exiftool
+kdebug
+__pycache__
